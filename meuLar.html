@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkling Clean</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="meuLar.css">
+
+</head>
+<body>
+
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-link active" aria-current="page" href="index.html">Sparkling Clean</a>
+        <a class="nav-link" href="meuLar.html">Meu Lar</a>
+      </nav>
+
+
+      <div class="container">
+        <h1>Cadastro de Serviços Domésticos</h1>
+        
+        <div class="form-container">
+            <h2>Cadastro de Cliente</h2>
+            <form id="form-cliente">
+                <input type="text" id="cliente-nome" placeholder="Nome do Cliente" required>
+                <input type="email" id="cliente-email" placeholder="E-mail do Cliente" required>
+                <input type="tel" id="cliente-telefone" placeholder="Telefone do Cliente" required>
+                <input type="end" id="cliente-end" placeholder="Digite o seu Endereço" required>
+                <button type="submit">Cadastrar Cliente</button>
+            </form>
+        </div>
+
+      
+
+        <div id="resumo">
+            <h3>Resumo das Informações</h3>
+            <p id="cliente-resumo"></p>
+            <p id="diarista-resumo"></p>
+            <p id="servicos-resumo"></p>
+        </div>
+        
+  </section>
+
+ 
+
+  <!-- Serviços Disponíveis -->
+  <section id="servicos">
+      <h2>Selecione os Serviços</h2>
+      <form id="form-servicos">
+          <label>
+              <input type="checkbox" class="servico" value="275"> Limpeza Geral - R$ 275,00
+          </label><br>
+          <label>
+              <input type="checkbox" class="servico" value="55"> Aspirar Sujeira por 45m² - R$ 55,00
+          </label><br>
+          <label>
+              <input type="checkbox" class="servico" value="80"> Lavar Banheiro por 60m² - R$ 80,00
+          </label><br>
+          <label>
+              <input type="checkbox" class="servico" value="45"> Lavar Janelas por Janelas - R$ 45,00
+          </label><br>
+          <label>
+              <input type="checkbox" class="servico" value="12"> Passar Roupas por peça - R$ 12,00
+          </label><br>
+          
+          <p>Total: R$ <span id="valor-total">0.00</span></p>
+          <button type="submit">Confirmar Serviços</button>
+      </form>
+    </div>
+    
+
+
+    <div class="footer">
+        <footer>
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted" style="font-size: 20px;">Home</a></li>
+              <li class="nav-item"><a href="meuLar.html" class="nav-link px-2 text-muted" style="font-size: 20px;">Meu Lar</a></li>
+            </ul>
+            <p class="text-center text-muted">Sparkling Clean 2024</p>
+            <p style="text-align: center;">Canais de Atendimento E Relacionamento com Clientes</p>
+            <p style="text-align: center;"><i class="fa-brands fa-square-whatsapp"> WhatsApp: (48) 9612-9518 </i></p>
+        </footer>
+        </div>
+
+
+    <script src="meuLar.js"></script>
+    <script src="https://kit.fontawesome.com/ec7743ed4c.js" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
